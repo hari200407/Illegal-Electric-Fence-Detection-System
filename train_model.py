@@ -59,4 +59,4 @@ for epoch in range(EPOCHS):
 
 torch.save({'model_state': model.state_dict(), 'class_names': train_data.classes},
            "fence_classifier.pth")
-print("✅ Model saved")
+print(" Model saved")
