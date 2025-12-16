@@ -1,6 +1,0 @@
-torch
-opencv-python
-flask
-torchvision
-requests
-Pillow
