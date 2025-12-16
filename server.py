@@ -1,4 +1,4 @@
-# server_webcam.py
+
 import cv2
 import torch
 import torchvision.transforms as T
