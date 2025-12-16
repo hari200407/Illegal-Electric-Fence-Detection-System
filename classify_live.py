@@ -5,7 +5,6 @@ from torchvision import models
 from PIL import Image
 from collections import deque
 
-# Keep last 10 predictions
 prediction_history = deque(maxlen=10)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -32,12 +31,12 @@ if not cap.isOpened():
     print("❌ Error: Could not open video/webcam")
     exit()
 
-print("✅ Video/Webcam started. Press 'q' to quit.")
+print(" Video/Webcam started. Press 'q' to quit.")
 
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("✅ Video ended")
+        print("Video ended")
         break
 
     img = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
